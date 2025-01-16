@@ -1,7 +1,7 @@
 function Home() {
     return(
         <>
-            <h2>Space Flight News</h2>
+            <h2>Home Page</h2>
         </>
     )
 }

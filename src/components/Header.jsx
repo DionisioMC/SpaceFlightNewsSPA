@@ -2,7 +2,13 @@ function Header() {
     return(
         <>
             <header>
-                <h1>Hello World</h1>
+                <p>Space Flight News</p>
+
+                <div id="pages">
+                    <p>Home Page</p>
+                    <p>News</p>
+                    <p>About</p>
+                </div>
             </header>
         </>
     )
