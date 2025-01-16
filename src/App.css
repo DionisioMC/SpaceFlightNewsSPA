@@ -1,7 +1,15 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: black;
+  color: white;
+  margin: 0px;
 }
 
 #pages {
@@ -9,4 +17,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 20vw;
+}
+
+#quotes {
+  margin-left: 1%;
 }
