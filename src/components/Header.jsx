@@ -5,9 +5,9 @@ function Header() {
                 <p>Space Flight News</p>
 
                 <div id="pages">
-                    <p>Home Page</p>
-                    <p>News</p>
-                    <p>About</p>
+                    <button type="button">Home Page</button>
+                    <button type="button">News</button>
+                    <button type="button">About</button>
                 </div>
             </header>
         </>

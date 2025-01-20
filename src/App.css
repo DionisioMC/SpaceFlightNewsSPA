@@ -16,7 +16,20 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 20vw;
+}
+
+#pages button {
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-decoration: underline;
 }
 
 #quotes {
