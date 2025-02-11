@@ -39,3 +39,7 @@ header {
   justify-content: space-around;
   height: 30vh;
 }
+
+.body {
+  margin-left: 3%;
+}
