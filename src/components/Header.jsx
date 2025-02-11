@@ -1,7 +1,4 @@
-import { Link, Navigate, redirect, useNavigate } from "react-router-dom";
-import About from "../pages/About";
-import Home from "../pages/Home";
-import News from "../pages/News";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
     const navigate = useNavigate();
