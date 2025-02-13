@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
-
-async function fetchData() {
-    const news = await fetch('https://api.spaceflightnewsapi.net/v4/articles/?format=json');
-    return news.json();
-}
+import Article from "../components/Article";
 
 function News() {
-    const [news, setNews] = useState();
+    const [news, setNews] = useState([]);
 
     useEffect(() => {
-        setNews(fetchData());
+        fetch('https://api.spaceflightnewsapi.net/v4/articles/?format=json')
+            .then(response => response.json())
+            .then(data => setNews(data.results));
     }, []);
 
     return(
@@ -19,12 +17,8 @@ function News() {
 
                 <div id="news">
                     {
-                        news.forEach(data => {
-                            return(
-                                <>
-                                    <p>{data.title}</p>
-                                </>
-                            )
+                        news.map(data => {
+                            return <Article article={data} key={data.id}/>
                         })
                     }
                 </div>
