@@ -3,6 +3,7 @@ import Article from "../components/Article";
 
 function News() {
     const [news, setNews] = useState([]);
+    
 
     useEffect(() => {
         fetch('https://api.spaceflightnewsapi.net/v4/articles/?format=json')
@@ -23,7 +24,6 @@ function News() {
                     }
                 </div>
             </div>
-            
         </>
     )
 }

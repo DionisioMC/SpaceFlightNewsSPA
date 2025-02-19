@@ -18,6 +18,7 @@ function Article({article}) {
                 <p>Summary: {article.summary}</p>
                 <p>You can read more about it <a href={article.url}>here</a></p>
             </div>
+            <hr />
         </>
     )
 }
